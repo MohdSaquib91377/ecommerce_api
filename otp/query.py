@@ -4,10 +4,6 @@ from django.conf import settings
 from datetime import datetime
 class OTPHandler:
 
-    @staticmethod
-    def get_OTPHandler_class_instance():
-        otp_ref = OTPHandler()
-        return otp_ref
     
     def create_single_otp(self,email_or_mobile: str, otp_code: str) -> otp_models.OTP:
         """

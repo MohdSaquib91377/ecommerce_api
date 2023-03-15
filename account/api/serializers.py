@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from account import models as account_models
 
-class UserRegistrationSerializer(serializers.Serializer):
+class RegistrationLoginSerializer(serializers.Serializer):
     """
     Serializer class for user registration.
     
@@ -15,4 +15,5 @@ class UserRegistrationSerializer(serializers.Serializer):
         The maximum length of this field is 64 characters.
     """
     email_or_mobile = serializers.CharField(max_length=64)
-    
+
+
